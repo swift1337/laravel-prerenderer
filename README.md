@@ -2,7 +2,7 @@
 Based on [nutsweb/laravel-prerender](https://github.com/jeroennoten/Laravel-Prerender) package
 
 ## Installation
-1) `composer require swift1337/laravel-prerender`
+1) `composer require swift1337/laravel-prerenderer`
 2) `php artisn vendor:publish --provider="Swift1337\Prerender\PrerenderServiceProvider"`
 3) Fill `.env` credentials described in `config/prerender.php`
 
