@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Swift1337\\Prerender\\": "src/Prerender"
+            "Swift1337\\Prerender\\": "src/"
         }
     },
     "extra": {
