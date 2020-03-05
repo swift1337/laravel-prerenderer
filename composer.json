@@ -27,6 +27,7 @@
             "Swift1337\\Prerender\\": "src/"
         }
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
