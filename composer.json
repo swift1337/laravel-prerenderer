@@ -1,0 +1,37 @@
+{
+    "name": "swift1337/laravel-prerenderer",
+    "description": "Integrate your Laravel app with prerender.io",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "seo",
+        "prerender",
+        "prerender.io",
+        "redirects",
+        "middleware"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Shlyomin",
+            "email": "vmike1337v@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.0.0",
+        "jenssegers/agent": "^2.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swift1337\\Prerender\\": "src/Prerender"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swift1337\\Prerender\\PrerenderServiceProvider"
+            ]
+        }
+    }
+}
