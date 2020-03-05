@@ -4,10 +4,7 @@ namespace Swift1337\Prerender\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Psr\Http\Message\ResponseInterface;
 use Swift1337\Prerender\Prerender\Prerenderer;
-use Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class PrerenderPage
@@ -39,11 +36,6 @@ class PrerenderPage
             return redirect($response->getHeader('Location'), $statusCode);
         }
 
-        return $this->buildResponse($response);
-    }
-
-    protected function buildResponse(ResponseInterface $response): Response
-    {
-        return (new HttpFoundationFactory)->createResponse($response);
+        return response($response->getBody());
     }
 }
